@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial Rounded MT Bold;
+    background: url(webpic.jpg) no-repeat center fixed;
+    background-size: cover;
+    overflow-y: hidden;
+}
+h2{
+    margin-left: 10px;
+}
+span.bel{
+    color: white;
+}
+span.tek{
+    color: rgb(0,200,225);
+}
+.box{
+    width: 250px;
+    padding: 50px;
+    margin: auto;
+    background: black;
+    text-align: center;
+    border-radius: 24px;
+}
+.box h1{
+    color: white;
+    font-weight: 500;
+}
+.box input[type="text"],.box input[type="password"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid turquoise;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+    width: 250px;
+    border-color: white;
+    outline: none;
+}
+.box input[type="submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid turquoise;
+    padding: 10px 30px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    background: powderblue;
+    color: black;
+}
+.box p{
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+.every{
+    width: 350px;
+    margin: auto;
+    position: relative;
+}
+a.signup{
+    background-color: blue;
+    padding: 6px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 3%;
+    left: 75%;
+}
+a.signup:hover{
+    background: turquoise;
+}
+@media screen and (max-width: 400px){
+    body{overflow-x: hidden;}
+    h2{
+        font-size: 14px;
+        background-color: black;
+        margin:0;
+        padding:5px;
+    }
+    .box{
+        width:80px;
+        margin:20px 0 0 2px;
+    }
+    .box h1{
+        color: white;
+        font-size: 14px;
+        margin-top:-10px;
+    }
+    .box input[type="text"],.box input[type='password']{
+        margin: 10px 0 7px -40px;
+        color: grey;
+        border-width: 1px;
+        border-radius: 7px;
+        width: 120px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    .box input[type="text"]:focus,.box input[type='password']:focus{
+        width: 140px;
+    }
+    .box input[type="submit"]{
+        padding: 5px 10px;
+        font-size: 12px;
+        margin: 40px 0 0 10px;
+        background-color: linen;
+        color: black;
+        border:none;
+    }
+    .box input[type="submit"]:active{
+        background-color: powderblue;
+    }
+    .box p{
+        font-size: 10px;
+        width: 200px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    a.signup{
+        font-size: 10px;
+        top: 90%;
+        left: 35%;
+    }
+}
